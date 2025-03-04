@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Sidebar from "../components/Sidebar";
-import Transactions from "../components/Transactions";
+import Transactions from "../Components/Transactions"
 import Analytics from "../components/Analytics";
 import Card from "../components/Card";
 import "../styles/Dashboard.css"; // Correct path to your CSS file
