@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Login from "./pages/LoginPage";  
 import DashboardPage from "./pages/DashboardPage";  
 import AdminPanel from "./pages/AdminPanel";
-import ProfitGoal from "./pages/ProfitGoal";
+import ProfitGoals from "./pages/ProfitGoal";
 import Sidebar from "./Components/Sidebar"
 import { AuthProvider } from "./context/AuthContext";
 
@@ -28,7 +28,7 @@ const App = () => {
           {/* All other pages wrapped with AppLayout (includes Sidebar) */}
           <Route path="/dashboard" element={<AppLayout><DashboardPage /></AppLayout>} />
           <Route path="/admin" element={<AppLayout><AdminPanel /></AppLayout>} />
-          <Route path="/profit" element={<AppLayout><ProfitGoal /></AppLayout>} />
+          <Route path="/profit" element={<AppLayout><ProfitGoals /></AppLayout>} />
         </Routes>
       </Router>
     </AuthProvider>

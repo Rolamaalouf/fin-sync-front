@@ -2,7 +2,7 @@ import axios from 'axios';
 import { useEffect, useState } from 'react';
 
 
-const ProfitGoal = ({ userRole }) => {
+const ProfitGoals = ({ userRole }) => {
   const [profitGoals, setProfitGoals] = useState([]); // ✅ Ensures initial state is an array
   const [targetProfit, setTargetProfit] = useState('');
   const [startDate, setStartDate] = useState('');
@@ -124,4 +124,4 @@ const ProfitGoal = ({ userRole }) => {
   );
 };
 
-export default ProfitGoal;
+export default ProfitGoals;
